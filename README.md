@@ -1,5 +1,12 @@
-# Terrain-Server
+# golang-map-services
+
 Server for quantized mesh tiles, xyz tile, and static files. Created with golang. 
+
+The server can be https or http, for https the server needs a cert.pem and key.pem to create this you will need to do the following comand:
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem
+
+when creatng the certs the "Name (e.g. server FQDN or YOUR name)" you need to enter your server ip e.g. coolmaps.com, or 127.0.0.1:2000
 
 ### how to use
 ```
